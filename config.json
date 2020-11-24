@@ -1,0 +1,39 @@
+{
+    "development": {
+        "application": {
+            "name": "BOM Test NodeJS - Development Environment",
+            "http": {
+                "port": 5000,
+                "_comment": "HTTP Server configuration"
+            },
+            "_comment": "Development Application Settings"
+        },
+        "weatherStations": {
+            "temperatureGreaterThan": 20,
+            "_comment": "This is used to define which BOM stations we are interested in"
+        },
+        "bom": {
+            "url": "http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json",
+            "_comment": "http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json"
+        }
+    },
+    "production": {
+        "application": {
+            "name": "BOM Test NodeJS - Production Environment",
+            "http": {
+                "port": 5000,
+                "_comment": "HTTP Server configuration"
+            },
+            "_comment": "Production Application Settings"
+        },
+        "weatherStations": {
+            "temperatureGreaterThan": 20,
+            "_comment": "This is used to define which BOM stations we are interested in"
+        },
+        "bom": {
+            "host": "www.bom.gov.au",
+            "url": "http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json",
+            "_comment": "http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json"
+        }
+    }
+}
