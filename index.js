@@ -18,8 +18,8 @@ const environmentConfig = config[environment];
 global.gEnvironmentConfig = environmentConfig;
 console.log("global.gEnvironmentConfig: %s", JSON.stringify(global.gEnvironmentConfig, null, 2));
 
-// Determine listening port
-const PORT = global.gEnvironmentConfig.application.http.port;
+// Determine listening port.  Pass via ENV, or via config file
+const PORT = process.env.PORT || global.gEnvironmentConfig.application.http.port;
 
 // Setup server
 let app = express()
