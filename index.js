@@ -19,7 +19,7 @@ global.gEnvironmentConfig = environmentConfig;
 console.log("global.gEnvironmentConfig: %s", JSON.stringify(global.gEnvironmentConfig, null, 2));
 
 // Determine listening port
-const HTTP_PORT = global.gEnvironmentConfig.application.http.port;
+const PORT = global.gEnvironmentConfig.application.http.port;
 
 // Setup server
 let app = express()
@@ -37,6 +37,6 @@ let app = express()
     .use('/config', routerConfig)
 
     // Startup
-    .listen(HTTP_PORT, () => console.log(`Listening on ${ HTTP_PORT }`));
+    .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 exports.app = app;

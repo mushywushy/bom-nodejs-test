@@ -22,11 +22,17 @@ NODE_ENV=production nodemon index.js
 ```
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
+## Testing Locally
+
+```sh
+NODE_ENV=development npm test
+```
+
 ## Deploying to Heroku
 
 ```sh
 $ heroku create
-$ git push heroku main
+$ git push heroku master
 $ heroku open
 ```
 or
